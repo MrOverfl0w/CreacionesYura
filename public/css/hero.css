@@ -1,0 +1,122 @@
+/* ==================================================
+  Hero Styling
+================================================== */
+
+.hero {
+  display: table;
+  position: relative;
+  background-image: url(../img/Capture.PNG);
+  background-size: 100%;
+  padding: 150px 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.hero:after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.hero-brand {
+  margin-bottom: 75px;
+  display: inline-block;
+}
+
+.hero-brand:hover {
+  opacity: .75;
+}
+
+.tagline {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  margin: 45px 0 75px 0;
+  color: #fff;
+}
+.hero h2 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  color: #199EB8;
+}
+
+.hero h3 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  color: #199EB8;
+}
+
+.hero .info i {
+  font-size: 32px;
+  color: #199EB8;
+  float: left;
+}
+
+.hero .info p {
+  padding: 0 0 10px 50px;
+  line-height: 24px;
+}
+
+.hero .form #sendmessage {
+  color: #199EB8;
+  border: 1px solid #199EB8;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero .form #sendmessage.show,
+.hero .form #errormessage.show,
+.hero .form .show {
+  display: block;
+}
+
+.hero .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.hero .form input,
+.hero .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero .form button[type="submit"] {
+  background: #199EB8;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.hero .form button[type="submit"]:hover {
+  background: #23c2e1;
+}
